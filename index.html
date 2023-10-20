@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="encabezado">
+        <h1 class="title-page">Mi Pagina Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#"> Inicio</a></li>
+                <li><a href="#"> Acerca de mi</a></li>
+                <li><a href="#"> Trabajos</a></li>
+                <li><a href="#"> Servicios</a></li>
+                <li><a href="#"> Contacto</a></li>
+            </ul>
+            <!--
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            -->
+        </nav>
+
+
+    </header>
+
+    <main>
+
+        <div id="SobreMi">
+            <div>
+
+                <h2>SOBRE MI</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat necessitatibus qui sint sed dolores
+                    quia quam quos ut explicabo distinctio ratione ad laboriosam eaque ex sapiente, minima molestias,
+                    dolorum
+                    aliquam?.
+                </p>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio veniam velit commodi, rem enim
+                    sed neque dicta obcaecati officia voluptatibus incidunt, perferendis dolore facilis aliquam vel
+                    eaque suscipit quisquam nemo.
+                </p>
+
+            </div>
+            <div>
+                <img src="images/perfil.png" alt="">
+            </div>
+
+
+        </div>
+        <div id="Paisaje">
+            <img src="images/paisaje.jpg" alt="">
+        </div>
+
+        <div id="Trabajos">
+            <h1>TRABAJOS</h1>
+            <div>
+                <div class="item-trabajo">
+                    
+                    <img class="tarjeta" src="images/Carrito.webp" alt="">
+                    
+                    <h2> Carrito</h2>
+                    <p class="p-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed
+                        delectus ea
+                        rerum placeat cupiditate velit, explicabo quae. Quaerat vero nemo culpa at ullam ut optio,
+                        placeat
+                        velit ratione nihil.</p>
+                    <a href="#">Leer más</a>
+                </div>
+                <div class="item-trabajo">
+                    
+                    <img class="tarjeta" src="images/BrazoRobotico.jpeg" alt="">
+                    
+                    <h2> Brazo Robotico</h2>
+                    <p class="p-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed
+                        delectus ea
+                        rerum placeat cupiditate velit, explicabo quae. Quaerat vero nemo culpa at ullam ut optio,
+                        placeat
+                        velit ratione nihil.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <div id="formulario">
+            <h1>Contacto</h1>
+            <br>
+            <form action="" method="get" class="formulario" id="form">
+                <div class="form-row">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" required />
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="pepe@gmail.com" required />
+                </div>
+                <div class="form-row">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+    
+                <div class="form-button">
+                    <button>Enviar</button>
+                </div>
+                <p class="alertas" id="alertas"></p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <h1>Redes Sociales</h1>
+        <ul>
+            <li><a href="https://wa.me/573166470197">Whatsapp</a></li>
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">linkedin</a></li>
+        </ul>
+        <br>
+        <div class="creador">Copyright © 2023 Mi Pagina, Todos los derechos reservados.<br>Creado por Luis Eduardo Rodríguez</div>
+
+    </footer>
+</body>
+
+</html>

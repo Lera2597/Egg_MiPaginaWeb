@@ -1,0 +1,278 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 4px 2px rgb(0, 0, 0);
+    font-weight:1000;
+    margin: 5px;
+}
+body{
+    width: 100vw;
+    background-color: rgb(182, 57, 57);
+}
+/* ENCABEZADO */
+header{
+    width: 100%;
+    height:15vh;
+    background: rgb(64, 63, 63);
+    border: 2px solid blue;
+    position: fixed;
+    z-index: 1;
+
+    display: flex ;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.title-page{
+    /*border: 3px solid blue;*/
+    padding: 20px;
+    color: rgb(169, 198, 50);
+    font-size: 30px;
+    text-shadow: 10px 5px 2px rgb(0, 0, 0);
+    margin-left: 20px;
+}
+header nav {
+    /*border: 3px solid rgb(255, 85, 0);*/
+    margin-right: 50px;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav ul li a{
+    color: rgb(207, 197, 197);
+    text-decoration: none;
+    font-size: 18px;
+    /*padding: 5px;*/
+}
+nav ul li a:hover{
+    color: rgb(169, 198, 50);
+}
+
+/*
+#check{
+    display:none;
+}
+.checkbtn{
+    font-size: 25px;
+    color: rgb(209, 22, 22);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+*/
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+/*
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas 
+    header h1 {
+        color: rgb(32, 32, 55);
+        background: rgb(101, 203, 101);
+    }
+    #check{
+        display:block;
+    }
+    .checkbtn{
+        display: block; 
+    }
+    #encabezado ul{
+        position: fixed;
+        width: 100%;
+        height:100vh;
+        background: red;
+        text-align: center;
+
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: 0%;
+        margin: 50px 0 ;
+        line-height: 30px;
+        background-color: aquamarine;
+    }
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+    #check:checked ~ .checkbtn{
+        color: rgb(64, 57, 57);
+    }
+  }
+*/
+
+main{
+    padding: 20px;
+    background-color: rgb(168, 124, 53);
+    color: rgb(235, 228, 228);
+    /*position: absolute;*/
+    position: relative;
+    top: 15vh;
+}
+
+#SobreMi{
+    border: 3px solid rgb(5, 1, 249); 
+    padding: 0px 50px 0 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+#SobreMi>div{
+    width: 50%;
+    margin: 5px;
+}
+#SobreMi>div:nth-child(1){
+    /*border: 3px solid rgb(146, 57, 57);*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#SobreMi>div:nth-child(1) h2{
+    /*border: 2px solid black;*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 4px 2px rgb(0, 0, 0);
+    font-weight:700;
+    
+}
+#SobreMi>div:nth-child(1) p{
+    /*border: 2px solid black;*/
+    font-size: 20px;
+    text-align: right;
+    width: 50%;
+}
+#SobreMi>div:nth-child(2){
+   /*border: 3px solid rgb(79, 224, 39);*/
+    display: flex;
+    /*align-items: center;*/
+
+
+}
+#SobreMi>:nth-child(2) img{
+    /*border: 3px solid rgb(14, 181, 28);*/
+    width: 50%;
+    height: 100%;
+}
+#Paisaje img{
+    width: 100%;
+}
+#Trabajos{
+    /*border: 3px solid rgb(84, 43, 22);*/
+    display: flex;
+    flex-direction: column;
+}
+
+#Trabajos>div{
+    /*border: 3px solid rgb(70, 53, 160);*/
+    display: flex;
+}
+
+.item-trabajo{
+    border: 3px inset rgba(255, 255, 255, 0.218);  
+    margin-right: 10px;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+}
+.item-trabajo p {
+    font-size: 20px;
+    text-align: justify;
+    /*color: red;*/
+}
+#Trabajos>div h2{
+    margin-top: 10px;
+    text-align: left;
+}
+
+.tarjeta{
+    border-radius: 10% ;
+    width: 50%;
+}
+/******** Formulario *********************/
+
+#formulario{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#formulario{
+    padding: 5px;
+}
+
+#formulario form{
+    border: 2px solid rgb(162, 154, 154);
+    background: rgb(106, 93, 93);
+    border-radius: 5px;
+    padding: 5px;
+}
+.form-row{
+    /*border: 2px solid red;*/
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    
+    
+}
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row textarea{
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    padding: 7px;
+    font-size: 14px;
+}
+.form-button{
+   /* border: 2px solid red;*/
+    text-align: center;
+}
+.form-button button{
+    text-align: center;
+    width: 30%;
+    border-radius: 10px;
+    padding: 5px;
+}
+/*************** Footer*********************/
+footer{
+    background: rgb(64, 63, 63);
+    color: white;
+    position: relative;
+    top: 15vh;
+}
+
+footer li{
+    margin: 0px; /*Cambiar el margen del elemento seleccionado. Espacio entre el borde y el siguiente elemento*/
+    padding: 5px
+}
+footer a{
+    color: rgb(115, 162, 162);
+}
+footer a:hover{
+    color: aqua;
+}
+.creador{
+    text-align: center;
+}
+
